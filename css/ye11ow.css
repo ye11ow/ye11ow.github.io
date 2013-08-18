@@ -1,3 +1,7 @@
+body {
+	background-image: url(../img/noisy.png)
+}
+
 .nav-left {
 	float: left;
 	width: 10%;
@@ -9,44 +13,53 @@
 		list-style-type: none;
 		margin-top: 80px;
 	}
-		#navbar li{
-			margin-bottom: 50px;
-		}
-		#navbar li.active > a{
+	#navbar li{
+		margin-bottom: 50px;
+	}
+
+		.active .nav-title{
 			color: #444;
 			background-color: #ff9;
+			border-left: 3px solid rgba(255,0,0,0.8);
 		}
 
-			a.nav-title {
-				height: 40px;
-				line-height: 40px;
-				display:block;
-				padding-left: 50px;
-				font-weight: bold;
-				transition:background 0.2s;
-				border-bottom: 1px solid rgba(0,0,0,0.1)
-			}
-			a.nav-title:hover {
-				color: #444;
-				text-decoration: none;
-				background-color: #ff9;
-				border-bottom: 1px solid rgba(255,0,0,0.8)
-			}
+		.nav-title {
+			height: 40px;
+			line-height: 40px;
+			display:block;
+			padding-left: 50px;
+			font-weight: bold;
+			transition:background 0.2s;
+			border-left: 3px solid rgba(0,0,0,0.1);
+		}
+		.nav-title:hover {
+			color: #444;
+			text-decoration: none;
+			background-color: #ff9;
+			border-left: 3px solid rgba(255,0,0,0.8);
+		}
 
 			#navbar li ul li{
 				margin-bottom: 10px;
 			}
-				#navbar li ul li a{
+
+				.sub-nav li a{
 					padding-left: 50px;
 					display: block;
 					width: 100%;
 					color: rgba(0,0,0,0.5);
 					transition:background 0.2s;
-					border-bottom: 0px solid rgba(0,0,0,0.1)
 				}
-				#navbar li ul li a:hover{
+				.sub-nav li a:hover{
 					color: rgba(0,0,0,0.8);
 					background-color: #ff9;
+					border-left: 3px solid #77A600;
+				}
+
+				.sub-nav .active{
+					color: rgba(0,0,0,0.8);
+					background-color: #ff9;
+					border-left: 3px solid #77A600;
 				}
 
 
@@ -56,7 +69,7 @@
 
 	.header {
 		height: 40px;
-		border-left: 3px solid red;
+		border-left: 3px solid rgba(255,0,0,0.8);
 		line-height: 40px;
 		padding-left: 30px;
 		font-weight: bold;

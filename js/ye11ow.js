@@ -7,3 +7,5 @@ $(document).ready( function(){
 		})
 	});
 });
+
+var name = "章旻";

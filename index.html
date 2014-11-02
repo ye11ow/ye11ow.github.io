@@ -1,121 +1,193 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Calvin Zhang's Resume</title>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/ye11ow.css" rel="stylesheet" media="screen">
+  <title>Calvin Zhang's Resume</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/onepage-scroll.css" rel="stylesheet" media="screen">
+  <link href="css/ye11ow.css" rel="stylesheet" media="screen">
 </head>
-<body data-spy="scroll" data-target="#navbar-left" data-offset="80">
-    <div id="navbar-left" class="nav-left">
-        <ul id="navbar">
-            <li class="active">
-                <a class="nav-title" href="#intro">简介</a>
-                <ul class="nav sub-nav">
-                    <li><a href="#about">自我介绍</a></li>
-                    <li><a href="#education">教育背景</a></li>
-                    <li><a href="#work">工作经验</a></li>
-                    <li><a href="#achivement">成就、荣誉</a></li>
-                </ul>
-            </li>
-            <li>
-                <a class="nav-title" href="#projects">项目经验</a>
-                <ul class="nav sub-nav">
-                    <li><a href="#personal-projects">个人项目</a></li>
-                    <li><a href="#team-projects">团队项目</a></li>
-                </ul>
-            </li>
-            <li><a class="nav-title" href="#links">链接</a></li>
-            <li><a class="nav-title" href="#contact">联系我</a></li>
-        </ul>
-    </div>
-    <div class="main"><div class="container"><div class="col-lg-8 col-lg-offset-2">
-        <div id="intro"  style="margin-top:80px;">
-            <div id="about" class="module">
-                <div class="header">自我简介</div>
-                <p>目前我就职于IBM CDL，职位Software Performance Analayst，主要负责IBM Maximo Inventory Insights<sup><a href="#mii">1</a></sup>等SaaS项目的开发。</p>
-                <p>近期暂无更换工作打算，<b>Google中国的Offer除外</b>。</p>
-            </div>
-            <div id="education" class="module">
-                <div class="header">教育背景</div>
-                <p>最高学历：大学本科 计算机专业</p>
+<body>
+  <div class="main">
 
-                <p>2008-2010 东华大学 网络工程专业</p>
-                <p>2010-2012 Mississippi State University, Computer Science Major（美国密西西比州立大学，计算机科学专业）</p>
-            </div>
-            <div id="work"  class="module">
-                <div class="header">工作经验</div>
-                <p>2013-01-07 ~ 至今： IBM CDL, Software Performance Analyst</p>
-                <p>主要工作为：软件测试自动化工具开发，性能分析工具、资产管理智能分析工具SaaS版本的开发。</p>
-                <div class="tags"><img src="img/tags.png" />Ruby/jRuby, Java, Spring, Javascript, Test Automation, Performance Testing, Web, SaaS</div>
-            </div>
-            <div id="achivement" class="module">
-                <div class="header">成就、荣誉</div>
-                <ul>
-                    <li><p>IBM Master the Mainframe Contest Part1 and Part2 Winner</p></li>
-                    <li><p>Abstract "Continuous Performance Analyzing during Synthetic Monitoring"被2013 IBM AP Symposium选为"Presentation"(第一作者)</p></li>
-                </ul>
-               
-            </div>
-            
+    <section id="intro" class="page">
+      <div style="margin-top: 200px; margin-left: 20%;">
+        <div class="circular">
         </div>
-        <div id="projects" class="module">
-            <div id="personal-projects">
-                <div class="header">个人项目</div>
-                <p><b>微博新控</b>： 2011-06 ~ 2012-12</p>
-                <p>微博新控为我利用课余时间编写的Google Chrome浏览器插件，最高峰时用户数达9000人，Chrome商店评分4.8/5.0。</p>
-                <p>主要功能：自定义你的新浪微博界面. 可以根据需要去除页面上大部分元素, 内容过滤系统帮助屏蔽指定用户, 桌面提醒功能让你不错过任何好友更新, 微博新控让你的新浪微博变得更加简洁!</p>
-                <div class="tags"><img src="img/tags.png" />Javascript, Chrome, Extension, HTML/CSS, OpenSource</div><br><br>
-
-                <p><b>Simplism</b>： 2013-07 ~ 2013-10</p>
-                <p>Simplism是一套轻量级的博客系统，灵感来源于Jekyll，是一个轻量级、单页面Ajax、Markdown语法、无数据库的基于Nodejs的博客系统。</p>
-                <div class="tags"><img src="img/tags.png" />Javascript, Nodejs, Blog, HTML/CSS, OpenSource, Markdown, Ajax, Express</div><br><br>
-                
-                <p><b>Checkpoint.js</b>： 2013-10 ~ 至今</p>
-                <p>Checkpoint.js是一套轻量级的Javascript Lib，主要功能为快速生成一个类似于Checkpoint的UI。</p>
-                <div class="tags"><img src="img/tags.png" />Javascript, Lib, Nodejs, Grunt, HTML/CSS, OpenSource</div>
-            </div>
-            <div id="team-projects" class="module">
-                <div class="header">团队项目</div>
-                <p><b>Phanium</b>： 2013-01 ~ 2013-06</p>
-                <p>基于Selenium的一套Server/Agents架构的网页性能分析系统。</p>
-                <p></p>
-                <div class="tags"><img src="img/tags.png" />Ruby, Ruby on Rails, Selenium, Performance Testing, Restful API, Web, SaaS</div><br><br>
-
-                <p><b>IBM Performance Analyst Suite</b>： 2013-06 ~ 2013-09</p>
-                <p>性能分析软件，可以分析多种performance data（DB2 snapshot, Java verbose GC ouput, Java thread dumps）</p>
-                <p></p>
-                <div class="tags"><img src="img/tags.png" />Ruby/jRuby, Ruby on Rails, Javascript, Performance Testing, Web, SaaS</div><br><br>
-
-                <p id="mii"><b>IBM Maximo Inventory Insights</b>： 2013-09 ~ 至今</p>
-                <p>基于SaaS的资产管理分析Application。</p>
-                <p></p>
-                <div class="tags"><img src="img/tags.png" />Spring, Spring MVC, J2EE, Java, Javascript, D3.js, Web</div>
-            </div>
+        <div class="basic-info">
+          <h3>Calvin Zhang</h3>
+          <h5>Web前端 &#38; 全栈工程师</h5>
+          <h5>成都人@上海</h5>
         </div>
-        <div id="links" class="module">
-            <div class="header">链接</div>
-            <div id="">
-                <ul>
-                    <li><a href="https://github.com/ye11ow" target="_blank">Github</a></li>
-                    <li><a href="http://t.ye11ow.me" target="_blank">Blog</a></li>
-                    <li><a href="http://stackoverflow.com/users/2410281/calvin-zhang" target="_blank">StackOverFlow</a></li>
-                    <li><a href="https://www.ibmserviceengage.com/inventory-insights/" target="_blank">IBM Maixmo Inventory Insights</a></li>
-                </ul>
-            </div>
-        </div>
-        <div id="contact" class="module" style="min-height: 1000px;">
-            <div class="header">联系我</div>
-            <div id="">
-                <a>ye111111ow (at) gmail.com</a>
-            </div>
-        </div>
-    </div></div></div>
+        <blockquote style="float: left; width: 600px; margin-left: 40px;">
+          <p>目前我就职于IBM CDL，职位Software Performance Analayst，主要负责IBM Maximo Inventory Insights等SaaS项目的开发。</p>
+          <p>如果您对我的简历感兴趣，欢迎给我<cite><a href="mailto:ye111111ow@gmail.com">邮件</a></cite>详谈，谢谢！</p>
+        </blockquote>
+      </div>
 
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/ye11ow.js"></script>
+      <div class="tips alert alert-success">
+        <b>更多资料请按方向键"下"</b>
+      </div>
+      <!--
+      <div id="about" class="module">
+          <div class="header">自我简介</div>
+          <p>目前我就职于IBM CDL，职位Software Performance Analayst，主要负责IBM Maximo Inventory Insights<sup><a href="#mii">1</a></sup>等SaaS项目的开发。</p>
+          <p>近期暂无更换工作打算，<b>Google中国的Offer除外</b>。</p>
+      </div>
+      <div id="education" class="module">
+          <div class="header">教育背景</div>
+          <p>最高学历：大学本科 计算机专业</p>
+
+          <p>2008-2010 东华大学 网络工程专业</p>
+          <p>2010-2012 Mississippi State University, Computer Science Major（美国密西西比州立大学，计算机科学专业）</p>
+      </div>
+      <div id="work"  class="module">
+          <div class="header">工作经验</div>
+          <p>2013-01-07 ~ 至今： IBM CDL, Software Performance Analyst</p>
+          <p>主要工作为：软件测试自动化工具开发，性能分析工具、资产管理智能分析工具SaaS版本的开发。</p>
+          <div class="tags"><img src="img/tags.png" />Ruby/jRuby, Java, Spring, Javascript, Test Automation, Performance Testing, Web, SaaS</div>
+      </div>
+      <div id="achivement" class="module">
+          <div class="header">成就、荣誉</div>
+          <ul>
+              <li><p>IBM Master the Mainframe Contest Part1 and Part2 Winner</p></li>
+              <li><p>Abstract "Continuous Performance Analyzing during Synthetic Monitoring"被2013 IBM AP Symposium选为"Presentation"(第一作者)</p></li>
+          </ul>
+      </div>-->
+    </section>
+    
+    <section id="details" class="page">
+      <div id="projects">
+        <h1>项目经验</h1>
+        <div class="project">
+          <p id="mii"><b>IBM Maximo Inventory Insights</b>： 2013-09 ~ 至今</p>
+          <p>基于SaaS的资产管理分析Application。</p>
+        </div>
+        <div class="project">
+          <p><b>IBM Performance Analyst Suite</b>： 2013-06 ~ 2014-06</p>
+          <p>性能分析软件，可以分析多种performance data（DB2 snapshot, Java verbose GC ouput, Java thread dumps）</p>
+        </div>
+        <div class="project">
+          <p><b>Phanium</b>： 2013-01 ~ 2013-06</p>
+          <p>基于Selenium的一套Server/Agents架构的网页性能分析系统。</p>
+        </div>
+        <div class="project">
+          <p><b>Checkpoint.js</b>： 2013-10 ~ 至今</p>
+          <p>Checkpoint.js是一套轻量级的Javascript Lib，主要功能为快速生成一个类似于Checkpoint的UI。</p>
+        </div>
+        <div class="project">
+          <p><b>微博新控</b>： 2011-06 ~ 2012-12</p>
+          <p>微博新控为我利用课余时间编写的Google Chrome浏览器插件，最高峰时用户数达9000人，Chrome商店评分4.8/5.0。主要功能为自定义新浪微博界面. 可以根据需要去除页面上大部分元素, 内容过滤系统帮助屏蔽指定用户, 并增加桌面提醒功能。</p>
+        </div>
+      </div> 
+      <div class="role-seperator">
+        <svg width="100%" height="100%">
+          <path d="M29 0 L29 1000" stroke="#aaa" stroke-width="1" />
+        </svg>
+      </div>
+      <div id="skills">
+        <h1>技能评估</h1>
+        <div class="skill" style="margin-top: 30px">
+          <div>Javascript</div>
+          <svg height="20px" width="300px">
+            <path d="M0 0 L300 0" stroke="#eeeeee" stroke-width="20" />
+            <path d="M0 0 L270 0" stroke="#0F9D58" stroke-width="20"/>
+          </svg>
+        </div>
+        <div class="skill">
+          <div>HTML/CSS</div>
+          <svg height="20px" width="300px">
+            <path d="M0 0 L300 0" stroke="#eeeeee" stroke-width="20" />
+            <path d="M0 0 L240 0" stroke="#0F9D58" stroke-width="20"/>
+          </svg>
+        </div>
+        <div class="skill">
+          <div>Ruby</div>
+          <svg height="20px" width="300px">
+            <path d="M0 0 L300 0" stroke="#eeeeee" stroke-width="20" />
+            <path d="M0 0 L200 0" stroke="#0F9D58" stroke-width="20"/>
+          </svg>
+        </div>
+        <div class="skill">
+          <div>Java</div>
+          <svg height="20px" width="300px">
+            <path d="M0 0 L300 0" stroke="#eeeeee" stroke-width="20" />
+            <path d="M0 0 L200 0" stroke="#0F9D58" stroke-width="20"/>
+          </svg>
+        </div>
+        <div class="skill">
+          <div>持续交付</div>
+          <svg height="20px" width="300px">
+            <path d="M0 0 L300 0" stroke="#eeeeee" stroke-width="20" />
+            <path d="M0 0 L180 0" stroke="#0F9D58" stroke-width="20"/>
+          </svg>
+        </div>
+        <div class="skill">
+          <div>MVC框架</div>
+          <svg height="20px" width="300px">
+            <path d="M0 0 L300 0" stroke="#eeeeee" stroke-width="20" />
+            <path d="M0 0 L160 0" stroke="#0F9D58" stroke-width="20"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiences" class="page">
+      <div id="edu">
+        <div style="margin-left:50%;margin-right:auto;width: 200px; text-align: right; margin-top: 10px"><h1>教育经历</h1></div>
+        <div style="margin-left:50%;margin-right:auto;width: 200px; text-align: right; margin-top: 50px">东华大学</div>
+        <div style="margin-left:50%;margin-right:auto;width: 200px; text-align: right; margin-top: 80px">Mississippi State University</div>
+      </div>
+      <div id="timeline">
+        <svg width="100%" height="100%">
+          <path d="M150 0 L150 1000" stroke="#aaa" stroke-width="1" />
+          <text x="88" y="140" fill="#F37500" font-size="16">2008-6</text>
+          <path d="M150 150 L0 150" stroke="#aaa" stroke-width="1" />
+          <text x="80" y="240" fill="#F37500" font-size="16">2010-11</text>
+          <path d="M150 250 L0 250" stroke="#aaa" stroke-width="1" />
+          <text x="165" y="340" fill="#F37500" font-size="16">2013-1</text>
+          <path d="M150 350 L300 350" stroke="#aaa" stroke-width="1" />
+          <text x="165" y="440" fill="#F37500" font-size="16">现在</text>
+          <path d="M150 450 L300 450" stroke="#aaa" stroke-width="1" />
+        </svg>
+      </div>
+      <div id="work">
+        <div style="margin-right:50%;margin-left:auto;width: 200px; text-align: left; margin-top: 220px"><h1>工作经历</h1></div>
+        <div style="margin-right:50%;margin-left:auto;width: 200px; text-align: left; margin-top: 50px">IBM中国研发中心</div>
+      </div>
+    </section>
+
+    <section id="links" class="page">
+      <div class="findme"><h1>找到我</h1></div>
+      <div class="links">
+        <svg height="60px" width="180px">
+          <path d="M0 0 L180 0 L180 60 L0 60 Z" fill="none" stroke="#2780e3" stroke-width="2" />
+          <text x="90" y="38" fill="#2780e3" font-size="24">Github</text>
+        </svg>
+        <svg height="60px" width="180px" class="pull-right">
+          <path d="M180 0 L0 0 L0 60 L180 60 Z" fill="none" stroke="#2780e3" stroke-width="2" />
+          <text x="90" y="38" fill="#2780e3" font-size="24">StackOverFlow</text>
+        </svg>
+        <br/>
+        <br/>
+        <svg height="60px" width="180px">
+          <path d="M0 60 L180 60 L180 0 L0 0 Z" fill="none" stroke="#2780e3" stroke-width="2" />
+          <text x="90" y="38" fill="#2780e3" font-size="24">知乎</text>
+        </svg>
+        <svg height="60px" width="180px" class="pull-right">
+          <path d="M180 60 L0 60 L0 0 L180 0 Z" fill="none" stroke="#2780e3" stroke-width="2" />
+          <text x="90" y="38" fill="#2780e3" font-size="24">Email</text>
+        </svg>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/jquery.onepage-scroll.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/walkway.min.js"></script>
+  <script src="js/ye11ow.js"></script>
 </body>
 </html>

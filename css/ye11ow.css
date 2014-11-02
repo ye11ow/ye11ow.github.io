@@ -1,97 +1,156 @@
 body {
-	background-image: url(../img/noisy.png)
+  background-image: url(../img/noisy.png)
 }
 
-.nav-left {
-	float: left;
-	width: 10%;
-	position: fixed;
-}
-	#navbar {
-		width: 200px;
-		padding-left: 0px;
-		list-style-type: none;
-		margin-top: 80px;
-	}
-	#navbar li{
-		margin-bottom: 50px;
-	}
-
-		.active .nav-title{
-			color: #444;
-			background-color: #ff9;
-			border-left: 3px solid rgba(255,0,0,0.8);
-		}
-
-		.nav-title {
-			height: 40px;
-			line-height: 40px;
-			display:block;
-			padding-left: 50px;
-			font-weight: bold;
-			transition:background 0.2s;
-			border-left: 3px solid rgba(0,0,0,0.1);
-		}
-		.nav-title:hover {
-			color: #444;
-			text-decoration: none;
-			background-color: #ff9;
-			border-left: 3px solid rgba(255,0,0,0.8);
-		}
-
-			#navbar li ul li{
-				margin-bottom: 10px;
-			}
-
-				.sub-nav li a{
-					padding-left: 50px;
-					display: block;
-					width: 100%;
-					color: rgba(0,0,0,0.5);
-					transition:background 0.2s;
-				}
-				.sub-nav li a:hover{
-					color: rgba(0,0,0,0.8);
-					background-color: #ff9;
-					border-left: 3px solid #77A600;
-				}
-
-				.sub-nav .active{
-					color: rgba(0,0,0,0.8);
-					background-color: #ff9;
-					border-left: 3px solid #77A600;
-				}
-
-
-.main {
-	width: 100%;
+.non-visible {
+  opacity: 0;
 }
 
-	.header {
-		height: 40px;
-		border-left: 3px solid rgba(255,0,0,0.8);
-		line-height: 40px;
-		padding-left: 30px;
-		font-weight: bold;
-		margin-bottom: 20px;
-		margin-top: 20px;
-	}
+.circular {
+  width: 96px;
+  height: 96px;
+  border-radius: 48px;
+  background: url(../img/avastar.png) no-repeat;
+  float: left;
+}
 
-	.module {
-		margin-top: 80px;
-	}
+.basic-info {
+  float: left;
+  margin-left: 20px;
+}
 
-	.module p {
-		margin-left: 30px;
-	}
+.basic-info h3 {
+  margin-top: 4px;
+}
 
-	.tags {
-		margin-left: 30px;
-		line-height: 16px;
-	}
+.tips {
+  display: none;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  bottom: 100px;
+  right: 150px;
+}
 
-	.tags img {
-		height: 16px;
-		width: 16px;
-		margin-right: 5px;
-	}
+
+
+#details > div {
+  float: left;
+  height: 100%;
+}
+
+
+
+
+#projects {
+  width: 56%;
+  padding-left: 100px;
+  padding-right: 50px;
+  padding-top: 10px;
+}
+
+.role-seperator {
+  width: 4%;
+}
+
+#skills {
+  width: 40%;
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
+
+
+#projects > h1 {
+  opacity: 0;
+}
+
+#skills > h1 {
+  opacity: 0;
+}
+
+.project {
+  margin-left: 40px;
+  margin-top: 30px;
+  opacity: 0;
+}
+
+.project > svg {
+  position: relative;
+  top: -10px;
+}
+
+.skill {
+  height: 40px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+.skill > div {
+  font-size: 18px;
+  width: 100px;
+  opacity: 0;
+}
+
+
+
+#experiences > div {
+  float: left;
+  height: 100%;
+}
+
+#edu {
+  width: 40%;
+  padding-left: 100px;
+  padding-right: 50px;
+  padding-top: 10px;
+  opacity: 0;
+}
+
+#timeline {
+  width: 20%;
+}
+
+#timeline text {
+  opacity: 0;
+}
+
+#work {
+  opacity: 0;
+  width: 40%;
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
+
+
+
+
+
+.findme {
+  height: 40px;
+  width: 60%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  opacity: 0;
+}
+
+.links {
+  width: 400px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.links > svg {
+  cursor: pointer;
+}
+
+.links > svg text {
+  opacity: 0;
+  text-anchor: middle;
+}

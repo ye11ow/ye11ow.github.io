@@ -1,15 +1,9 @@
 $(document).ready( function(){
-  setTimeout(function(){
-    $(".tips").show(500);
-  }, 3000);
 
-  var skills = [];
-  skills.push(new Walkway('.role-seperator > svg'));
-  skills.push(new Walkway('.skill > svg'));
-
-  var timeline = new Walkway({
-    selector: '#timeline > svg',
-    duration: 1000
+  window.sr = new scrollReveal({
+    wait: '0.3s',
+    move: '50px',
+    enter: 'left'
   });
 
   var links = new Walkway({
@@ -17,62 +11,39 @@ $(document).ready( function(){
     duration: 1000
   });
 
+  var $timeline_block = $('.cd-timeline-block');
 
-  $(".main").onepage_scroll({
-     sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
-     easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
-                                      // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
-     animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
-     pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
-     updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
-     beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
-     afterMove: function(index) {
-      if (index === 2) {
-        $("#details").find("h1").each(function(){
-          $(this).animate({
-            opacity: 1
-          }, "fast", function(){
-            skills[0].draw();
-            skills[1].draw();
-            $("#details").find(":visible").each(function(){
-              $(this).animate({
-                opacity: 1
-              }, "show");
-            });
-          })
-        });
-      } else if (index === 3) {
-        $('#timeline text').animate({
-          opacity: 1
-        }, "slow");
-        timeline.draw(function(){
-          $("#edu").animate({
-            opacity: 1
-          }, "slow");
-          $("#work").animate({
-            opacity: 1
-          }, "slow");
-        });
-      } else if (index === 4) {
-        $(".findme").animate({
-          opacity: 1
-        }, "fast", function(){
-          links.draw(function(){
-            $(".links > svg text").animate({
-              opacity: 1
-            }, "slow");
-          });
-        });
-      }
-     },   // This option accepts a callback function. The function will be called after the page moves.
-     loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
-     keyboard: true,                  // You can activate the keyboard controls
-     responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
-                                      // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
-                                      // the browser's width is less than 600, the fallback will kick in.
-     direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
+  $timeline_block.each(function(){
+    if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
+      $(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+    }
   });
-  
+
+  $(window).on('scroll', function(){
+    $timeline_block.each(function(){
+      if( $(this).offset().top <= $(window).scrollTop() + $(window).height() * 0.5 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
+        console.log("show");
+        $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+      }
+    });
+
+    if ($(".findme").offset().top <= $(window).scrollTop() + $(window).height() * 0.75) {
+      $(".findme").animate({
+        opacity: 1
+      }, "fast", function(){
+        links.draw(function(){
+          $(".links > svg text").animate({
+            opacity: 1
+          }, "slow");
+        });
+      });
+    }
+
+  });
+
+
+
+
 });
 
 var name = "章旻";

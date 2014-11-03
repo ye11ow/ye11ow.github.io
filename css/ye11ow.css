@@ -1,9 +1,37 @@
-body {
-  background-image: url(../img/noisy.png)
+
+.container-fluid {
+  padding: 0;
 }
 
-.non-visible {
-  opacity: 0;
+.page {
+  position: absolute;
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+}
+
+#intro {
+  top: 0%;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  height: 100%;
+  background: #303e49;
+  color: white;
+}
+
+#details {
+  top: 100%;
+  background: url(../img/noisy.png);
+}
+
+#experiences {
+  top: 200%;
+  background: #d7e4ed;
+}
+
+#links {
+  top: 300%;
 }
 
 .circular {
@@ -59,20 +87,9 @@ body {
   padding-top: 10px;
 }
 
-
-
-#projects > h1 {
-  opacity: 0;
-}
-
-#skills > h1 {
-  opacity: 0;
-}
-
 .project {
   margin-left: 40px;
   margin-top: 30px;
-  opacity: 0;
 }
 
 .project > svg {
@@ -89,37 +106,6 @@ body {
 .skill > div {
   font-size: 18px;
   width: 100px;
-  opacity: 0;
-}
-
-
-
-#experiences > div {
-  float: left;
-  height: 100%;
-}
-
-#edu {
-  width: 40%;
-  padding-left: 100px;
-  padding-right: 50px;
-  padding-top: 10px;
-  opacity: 0;
-}
-
-#timeline {
-  width: 20%;
-}
-
-#timeline text {
-  opacity: 0;
-}
-
-#work {
-  opacity: 0;
-  width: 40%;
-  padding-left: 50px;
-  padding-top: 10px;
 }
 
 

@@ -15,8 +15,7 @@ body {
 
 #intro {
   top: 0%;
-  padding-top: 20%;
-  padding-bottom: 20%;
+  padding-top: 15%;
   height: 100%;
   background: #303e49;
   color: white;
@@ -50,16 +49,24 @@ body {
 }
 
 .basic-info h3 {
+  font-weight: bold;
   margin-top: 4px;
+  text-align: right;
+  line-height: 42px;
 }
 
-.tips {
-  display: none;
-  width: 200px;
-  height: 50px;
+.basic-info h5 {
+  text-align: right;
+}
+
+
+.scroll-down {
+  height: 108px;
+  width: 36px;
+  background: url(../img/ic_expand_more_white.png) repeat-y;
   position: absolute;
-  bottom: 100px;
-  right: 150px;
+  bottom: 15%;
+  right: 10%;
 }
 
 

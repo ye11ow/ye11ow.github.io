@@ -1,17 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
   <title>Calvin Zhang's Resume</title>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link href="css/timeline.css" rel="stylesheet" media="screen">
+  <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
   <link href="css/ye11ow.css" rel="stylesheet" media="screen">
 </head>
 <body>
   <div class="container-fluid">
 
     <section id="intro" class="page">
+      <div class="lang-control">
+        <i class="fa fa-language fa-lg"></i>
+        <button type="button" class="btn btn-link btn-xs disabled">简体中文</button>
+        / 
+        <button type="button" class="btn btn-link btn-xs">English</button>
+      </div>
       <div style="margin-left: 20%; height: 100%">
         <div class="circular">
         </div>
@@ -22,7 +29,7 @@
         </div>
         <blockquote style="float: left; width: 600px; margin-left: 40px;">
           <p>目前我就职于IBM CDL，职位Software Performance Analayst，主要负责IBM Maximo Inventory Insights等SaaS项目的开发。</p>
-          <p>如果您对我的简历感兴趣，欢迎给我<cite><a href="mailto:ye111111ow@gmail.com">邮件</a></cite>详谈，谢谢！</p>
+          <p>如果您对我的简历感兴趣，欢迎给我<a href="mailto:ye111111ow@gmail.com"><i class="email fa fa-envelope-o fa-lg"></i></a>详谈，谢谢！</p>
         </blockquote>
       </div>
       <div class="scroll-down"></div>
@@ -31,7 +38,15 @@
     <section id="details" class="page">
       <div id="projects">
         <h1 data-sr>项目经验</h1>
-        <div  data-sr class="project">
+        <div data-sr class="project">
+          <p id="mii"><b>Mission Board</b>： 2014-09 ~ 至今</p>
+          <p>A Chrome App</p>
+        </div>
+        <div data-sr class="project">
+          <p id="mii"><b>Maximo Serviceability (POC)</b>： 2014-08 ~ 至今</p>
+          <p>A prototype</p>
+        </div>
+        <div data-sr class="project">
           <p id="mii"><b>IBM Maximo Inventory Insights</b>： 2013-09 ~ 至今</p>
           <p>基于SaaS的资产管理分析Application。</p>
         </div>
@@ -49,7 +64,7 @@
         </div>
         <div data-sr class="project">
           <p><b>微博新控</b>： 2011-06 ~ 2012-12</p>
-          <p>微博新控为我利用课余时间编写的Google Chrome浏览器插件，最高峰时用户数达9000人，Chrome商店评分4.8/5.0。主要功能为自定义新浪微博界面. 可以根据需要去除页面上大部分元素, 内容过滤系统帮助屏蔽指定用户, 并增加桌面提醒功能。</p>
+          <p>微博新控是Google Chrome浏览器的一款插件，最高峰时用户数达9000人，Chrome商店评分4.8/5.0。主要功能为自定义新浪微博界面. 可以根据需要去除页面上大部分元素, 内容过滤系统帮助屏蔽指定用户, 并增加桌面提醒功能。</p>
         </div>
       </div> 
       <div class="role-seperator">
@@ -74,6 +89,13 @@
           </svg>
         </div>
         <div data-sr="enter right" class="skill">
+          <div>React.js</div>
+          <svg height="20px" width="300px">
+            <path d="M0 0 L300 0" stroke="#eeeeee" stroke-width="20" />
+            <path d="M0 0 L210 0" stroke="#0F9D58" stroke-width="20"/>
+          </svg>
+        </div>
+        <div data-sr="enter right" class="skill">
           <div>Ruby</div>
           <svg height="20px" width="300px">
             <path d="M0 0 L300 0" stroke="#eeeeee" stroke-width="20" />
@@ -95,10 +117,10 @@
           </svg>
         </div>
         <div data-sr="enter right" class="skill">
-          <div>MVC框架</div>
+          <div>Spring</div>
           <svg height="20px" width="300px">
             <path d="M0 0 L300 0" stroke="#eeeeee" stroke-width="20" />
-            <path d="M0 0 L160 0" stroke="#0F9D58" stroke-width="20"/>
+            <path d="M0 0 L120 0" stroke="#0F9D58" stroke-width="20"/>
           </svg>
         </div>
       </div>
@@ -147,27 +169,27 @@
         <img src="img/heart.png"></img>
       </div>
       <div class="links">
-        <svg height="60px" width="180px">
-          <path d="M0 0 L180 0 L180 60 L0 60 Z" fill="none" stroke="#2780e3" stroke-width="2" />
-          <text x="90" y="38" fill="#2780e3" font-size="24">Github</text>
+        <svg data-target="https://github.com/ye11ow/">
+          <path d="M0 0 L180 0 L180 60 L0 60 Z" />
+          <text x="90" y="38">Github</text>
         </svg>
-        <svg height="60px" width="180px" class="pull-right">
-          <path d="M180 0 L0 0 L0 60 L180 60 Z" fill="none" stroke="#2780e3" stroke-width="2" />
-          <text x="90" y="38" fill="#2780e3" font-size="24">StackOverFlow</text>
+        <svg class="pull-right" data-target="http://stackoverflow.com/users/2410281/calvin-zhang">
+          <path d="M180 0 L0 0 L0 60 L180 60 Z" />
+          <text x="90" y="38">StackOverFlow</text>
         </svg>
         <br/>
         <br/>
-        <svg height="60px" width="180px">
-          <path d="M0 60 L180 60 L180 0 L0 0 Z" fill="none" stroke="#2780e3" stroke-width="2" />
-          <text x="90" y="38" fill="#2780e3" font-size="24">知乎</text>
+        <svg data-target="http://www.zhihu.com/people/ye-lou-jiang">
+          <path d="M0 60 L180 60 L180 0 L0 0 Z" />
+          <text x="90" y="38">知乎</text>
         </svg>
-        <svg height="60px" width="180px" class="pull-right">
-          <path d="M180 60 L0 60 L0 0 L180 0 Z" fill="none" stroke="#2780e3" stroke-width="2" />
-          <text x="90" y="38" fill="#2780e3" font-size="24">Email</text>
+        <svg data-target="mailto:ye111111ow@gmail.com" class="pull-right">
+          <path d="M180 60 L0 60 L0 0 L180 0 Z" />
+          <text x="90" y="38">Email</text>
         </svg>
       </div>
       <div class="latest-update">
-        <h4>2014-11-04 <small>更新</small></h4>
+        <h4>2015-01-20 <small>更新</small></h4>
       </div>
     </section>
   </div>

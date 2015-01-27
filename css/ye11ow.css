@@ -5,6 +5,10 @@ body {
   padding: 0;
 }
 
+h3 {
+  margin-left: 25px;
+}
+
 .page {
   position: absolute;
   min-height: 100%;
@@ -21,19 +25,26 @@ body {
   color: white;
 }
 
-#details {
+#work {
   top: 100%;
-  height: 120%;
+  height: 100%;
   background: url(../img/noisy.png);
 }
 
-#experiences {
-  top: 220%;
-  background: #d7e4ed;
+#open-source {
+  top: 200%;
+  height: 100%;
+  background-color: #4FC1E9;
+  color: rgba(255,255,255,0.9);
+  padding-top: 200px;
+}
+
+#open-source > h1 {
+  text-align: center
 }
 
 #links {
-  top: 320%;
+  top: 300%;
 }
 
 .lang-control {
@@ -55,19 +66,19 @@ body {
   float: left;
 }
 
-.basic-info {
+.intro {
   float: left;
   margin-left: 20px;
 }
 
-.basic-info h3 {
+.intro h3 {
   font-weight: bold;
   margin-top: 4px;
   text-align: right;
   line-height: 42px;
 }
 
-.basic-info h5 {
+.intro h5 {
   text-align: right;
 }
 
@@ -87,13 +98,15 @@ body {
 }
 
 
-
-#details > div {
+#work > div {
   float: left;
   height: 100%;
 }
 
-
+.work-bio {
+  margin-left: 50px;
+  margin-top: 50px;
+}
 
 
 #projects {
@@ -107,14 +120,14 @@ body {
   width: 4%;
 }
 
-#skills {
+#basic {
   width: 40%;
   padding-left: 50px;
   padding-top: 10px;
 }
 
 .project {
-  margin-left: 40px;
+  margin-left: 50px;
   margin-top: 30px;
 }
 
@@ -122,6 +135,28 @@ body {
   position: relative;
   top: -10px;
 }
+
+.basic-info {
+  padding-top: 10px;
+}
+
+.basic-info dl {
+  margin-left: 40px;
+}
+
+
+.basic-info dt {
+  float: left;
+  width: 30%;
+  margin-top: 10px;
+}
+
+.basic-info dd {
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+}
+
 
 .skill {
   height: 40px;
@@ -133,10 +168,6 @@ body {
   font-size: 18px;
   width: 100px;
 }
-
-
-
-
 
 
 .findme {

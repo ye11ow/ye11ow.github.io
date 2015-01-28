@@ -1,61 +1,65 @@
 body {
   overflow-x: hidden;
 }
+
 .container-fluid {
   padding: 0;
 }
 
-h3 {
-  margin-left: 25px;
-}
+/* sections */
 
 .page {
   position: absolute;
   min-height: 100%;
-  height: 100%;
-  width: 100%;
   min-width: 100%;
 }
 
-#intro {
+.cover {
   top: 0%;
   padding-top: 15%;
-  height: 100%;
   background: #303e49;
   color: white;
 }
 
-#work {
+.evaluation {
   top: 100%;
   height: 100%;
+  background-color: #FC6E51;
+  color: rgba(255,255,255,0.9);
+}
+
+.work {
+  top: 200%;
   background: url(../img/noisy.png);
 }
 
-#open-source {
-  top: 200%;
+.open-source {
+  top: 300%;
   height: 100%;
-  background-color: #4FC1E9;
+  background-color: #3BAFDA;
   color: rgba(255,255,255,0.9);
-  padding-top: 200px;
-}
-
-#open-source > h1 {
-  text-align: center
 }
 
 #links {
-  top: 300%;
+  top: 400%;
 }
 
-.lang-control {
+
+/* cover page */
+
+.languages {
   position: absolute;
   top: 10px;
   right: 10px;
   font-size: 12px;
 }
 
-.lang-control button {
+.languages button {
   color: white!important;
+}
+
+.hero {
+  margin-left: 20%;
 }
 
 .circular {
@@ -87,7 +91,6 @@ h3 {
   font-size: 1.2em;
 }
 
-
 .scroll-down {
   height: 108px;
   width: 36px;
@@ -98,31 +101,59 @@ h3 {
 }
 
 
-#work > div {
-  float: left;
-  height: 100%;
+
+/* introduction */
+
+.evaluation > .row {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.basic-info {
+  width: 100%;
+  padding-left: 50px;
+  padding-top: 10px;
+  text-align: left
+}
+
+.bi-title {
+  display: inline-block;
+  width: 150px;
+}
+
+.bi-value {
+
+}
+
+
+.skill {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.skill > div {
+  font-size: 18px;
+  text-align: left;
+  margin-left: 130px;
+}
+
+
+/* work page */
+
+.projects h1 {
+  text-align: center;
 }
 
 .work-bio {
   margin-left: 50px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
-
-#projects {
-  width: 56%;
-  padding-left: 100px;
-  padding-right: 50px;
-  padding-top: 10px;
-}
-
-.role-seperator {
-  width: 4%;
-}
-
-#basic {
-  width: 40%;
-  padding-left: 50px;
+.projects {
+  padding-left: 10%;
+  padding-right: 10%;
   padding-top: 10px;
 }
 
@@ -131,44 +162,44 @@ h3 {
   margin-top: 30px;
 }
 
-.project > svg {
-  position: relative;
-  top: -10px;
-}
-
-.basic-info {
-  padding-top: 10px;
-}
-
-.basic-info dl {
-  margin-left: 40px;
-}
 
 
-.basic-info dt {
-  float: left;
-  width: 30%;
-  margin-top: 10px;
-}
+/* open-source page */
 
-.basic-info dd {
-  float: left;
+
+.os-header, .eval-header {
+  margin-left: auto;
+  margin-right: auto;
   width: 70%;
-  margin-top: 10px;
+  text-align: center;
+  padding-top: 80px;
 }
 
-
-.skill {
-  height: 40px;
-  margin-bottom: 20px;
-  margin-left: 40px;
+.os-projects {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 
-.skill > div {
-  font-size: 18px;
-  width: 100px;
+.os-projects > div {
+  text-align: center;
 }
 
+.os-projects img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 160px;
+  height: 120px;
+  border: 0;
+  background-color: white;
+}
+
+.os-projects h3 {
+  font-weight: bold;
+}
+
+/* findme page */
 
 .findme {
   height: 40px;

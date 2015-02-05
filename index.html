@@ -4,18 +4,17 @@
   <title>Calvin Zhang's Resume</title>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-  <link href="css/timeline.css" rel="stylesheet" media="screen">
+  <link href="css/pure-min.css" rel="stylesheet" media="screen">
   <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
   <link href="css/ye11ow.css" rel="stylesheet" media="screen">
 </head>
 <body>
   <div class="container-fluid">
 
-    <section class="page cover">
+    <div class="page cover">
       <div class="languages">
-        <i class="fa fa-language fa-lg"></i>
-        <button type="button" class="btn btn-link btn-xs disabled">简体中文</button><!--
+        <!--<i class="fa fa-language fa-lg"></i>
+        <a href="#">简体中文</a>
         / 
         <button type="button" class="btn btn-link btn-xs">English</button>-->
       </div>
@@ -27,82 +26,23 @@
           <h5>Web前端/全栈工程师</h5>
           <h5>成都人@上海</h5>
         </div>
-        <blockquote>
+        <div class="intro-details">
           <p>目前我就职于IBM CDL，职位Software Performance Analayst，主要负责IBM Maximo Inventory Insights等SaaS项目的开发。</p>
           <p>如果您对我的简历感兴趣，欢迎给我&nbsp;<a href="mailto:ye111111ow@gmail.com"><i class="email fa fa-envelope-o fa-lg"></i></a>&nbsp;详谈，谢谢！</p>
-        </blockquote>
+        </div>
       </div>
       <div class="scroll-down"></div>
       <div class="clearfix"></div>
-    </section>
+    </div>
 
     <div class="main-content">
-
-      <section class="page work">
-        <div class="projects">
-          <h1 data-sr> <i class="fa fa-briefcase"></i> 工作经历<small>(1)</small></h1>
-          <hr data-sr />
-          <h3 data-sr>IBM CDL中国开发中心 <small>2013/01 - 至今</small></h3>
-          <div data-sr class="work-bio">
-            我于2012年毕业后即加入IBM CDL，职位为Software Perfermance Analyst。在职期间参与多个团队项目，主要负责SaaS项目前端开发，同时也会涉及到后端的Java/Ruby并参与搭建基于Docker的Continuous Delivery框架。
-          </div>
-          <div data-sr class="project">
-            <h4><b>Maximo Serviceability (POC)</b> <small>2014-08 ~ 至今</small></h4>
-            <p>一个通过日志、MMI等多方面数据来监控Maximo状况的POC项目，该项目由我独立负责。前端采用Reactjs，通过SSE与后端Sinatra服务器通信，获取实时日志、警告进行展示。后端采用Kafka作为消息队列，将日志、警告推送到前端。Logstash作为客户端收集Maximo系统日志并实时发送到Kafka服务器</p>
-            <span><i class="fa fa-tags"></i> Javascript, Ruby, React.js, Sinatra, Kafka, Semantic UI, Logstash</span>
-          </div>
-          <div data-sr class="project">
-            <h4><b>IBM Maximo Inventory Insights</b> <small>2013-09 ~ 至今</small></h4>
-            <p>基于SaaS的资产管理辅助软件，通过分析存货库存历史来为用户推荐最适合的存货管理设置。在该项目中，我负责绝大部分前端和部分SaaS后端开发。前端主要利用D3.js将分析数据可视化从而帮助客户快速定位存在问题的存货，再利用datatables展示更详细的存货情报。</p>
-            <p>同时，我还参与搭建该项目的Continuous Delivery(基于Jenkins, Docker)和Automation Test(基于Selenium)框架，保证了快速迭代和代码质量。</p>
-            <span><i class="fa fa-tags"></i> Javascript, Java, D3.js, datatable, AMD, Bootstrap, Less, Spring MVC, MongoDB, Redis</span>
-          </div>
-          <div data-sr class="project">
-            <h4><b>IBM Performance Analyst Suite</b> <small>2013-06 ~ 2014-06</small></h4>
-            <p>性能分析软件，可以分析多种performance data (DB2 snapshot, Java verbose GC ouput, Java thread dumps)。该项目的SaaS部分在IBM Bluemix上，我参与了该项目SaaS UI的优化和bug fix，并贡献了一个插件</p>
-            <span><i class="fa fa-tags"></i> Javascript, Ruby/jRuby, ROR, datatable, Bootstrap</span>
-          </div>
-          <div data-sr class="project">
-            <h4><b>Phanium (POC)</b> <small>2013-01 ~ 2013-06</small></h4>
-            <p>基于Selenium和Phantomjs的一套Server/Agents架构的网页性能分析系统。用户可以向Phanium提交Selenium脚本，该系统会执行脚本并返回分析结果。</p>
-            <span><i class="fa fa-tags"></i> Javascript, Ruby, ROR, Selenium, PhantomJS, HTTP Archive</span>
-          </div>
-        </div> 
-      </section>
-
-      <section class="page open-source">
-        <div class="os-header">
-          <h1 data-sr="enter top"><i class="fa fa-code-fork"></i> 开源项目<small>(3)</small></h1>
-          <hr data-sr="enter top"/>
-          <p data-sr="enter top">业余时间，我也热爱折腾一点自己的小东西</p>
-        </div>
-
-        <div class="row os-projects">
-          <div data-sr="enter top" class="col-lg-4">
-            <img src="img/missionboard.png" />
-            <h3><a href="https://chrome.google.com/webstore/detail/mission-board/akojjilfeffkjafemodkhciiebhldnkb" target="_blank">Mission Board</a></h3>
-            <p>一个基于进度的清单类Chrome App，适用于追踪管理剧集、动漫、图书等等项目。</p>
-          </div>
-          <div data-sr="enter top" class="col-lg-4">
-            <img src="img/checkpoint.png" />
-            <h3><a href="http://ye11ow.github.io/checkpoint.js/" target="_blank">Checkpoint.js</a></h3>
-            <p>Checkpoint.js是一套轻量级的Javascript库，主要功能为快速生成一个类似于Checkpoint的UI。</p>
-          </div>
-          <div data-sr="enter top" class="col-lg-4">
-            <img src="img/weibokong.png" />
-            <h3><a href="https://code.google.com/p/wei-bo-kong/" target="_blank">微博新控</a></h3>
-            <p>微博新控是Google Chrome浏览器的一款插件，最高峰时用户数达9000人，Chrome商店评分4.8/5.0。主要功能为自定义新浪微博界面. 可以根据需要去除页面上大部分元素, 内容过滤系统帮助屏蔽指定用户, 并增加桌面提醒功能。</p>
-          </div>
-        </div>
-      </section>
-
       <section class="page evaluation">
         <div class="eval-header">
           <h1 data-sr="enter top"><i class="fa fa-user"></i> 自我简介</h1>
           <hr data-sr="enter top"/>
         </div>
-        <div class="row">
-          <div data-sr="enter left"  class="col-lg-6">
+        <div class="pure-g">
+          <div data-sr="enter left"  class="pure-u-1-2">
             <h3>个人资料</h3>
             <div class="basic-info">
               <span class="bi-title">工作经验：</span>
@@ -129,7 +69,7 @@
               <span class="bi-value">英语（优秀）</span>
             </div>
           </div>
-          <div data-sr="enter right" id="skills" class="col-lg-6">
+          <div data-sr="enter right" id="skills" class="pure-u-1-2">
             <h3>技能评估</h3>
             <div class="skill" style="margin-top: 30px">
               <div>Javascript</div>
@@ -184,6 +124,65 @@
         </div>
       </section>
 
+
+      <section class="page work">
+        <div class="projects">
+          <h1 data-sr> <i class="fa fa-briefcase"></i> 工作经历<small>(1)</small></h1>
+          <hr data-sr />
+          <h3 data-sr>IBM CDL中国开发中心 <small>2013/01 - 至今</small></h3>
+          <div data-sr class="work-bio">
+            我于2012年毕业后加入IBM CDL，职位为Software Perfermance Analyst。在职期间主要负责SaaS项目前端开发，同时也会涉及到后端的Java/Ruby。
+          </div>
+          <div data-sr class="project">
+            <h4><b>Maximo Serviceability (POC)</b> <small>2014-08 ~ 至今</small></h4>
+            <p>一个通过日志、MMI等多方面数据来监控Maximo状况的POC项目，该项目由我独立负责。前端采用Reactjs，通过SSE与后端Sinatra服务器通信，获取实时日志、警告进行展示。后端采用Kafka作为消息队列，将日志、警告推送到前端。Logstash作为客户端收集Maximo系统日志并实时发送到Kafka服务器。</p>
+            <span><i class="fa fa-tags"></i> Javascript, Ruby, React.js, Sinatra, Kafka, Semantic UI, Logstash</span>
+          </div>
+          <div data-sr class="project">
+            <h4><b>IBM Maximo Inventory Insights</b> <small>2013-09 ~ 至今</small></h4>
+            <p>基于SaaS的资产管理辅助软件，通过分析存货库存历史来为用户推荐最适合的存货管理设置。我负责绝大部分前端和部分SaaS后端开发，主要利用D3.js将分析数据可视化。同时，我还参与搭建该项目的Continuous Delivery(基于Jenkins, Docker)和Automation Test(基于Selenium)框架。</p>
+            <span><i class="fa fa-tags"></i> Javascript, Java, D3.js, Spring MVC, MongoDB, Redis</span>
+          </div>
+          <div data-sr class="project">
+            <h4><b>IBM Performance Analyst Suite</b> <small>2013-06 ~ 2014-06</small></h4>
+            <p>性能分析软件，可以分析多种performance data (DB2 snapshot, Java verbose GC ouput, Java thread dumps)。该项目的SaaS部分在IBM Bluemix上，我参与了该项目SaaS UI的优化和bug fix，并贡献了一个插件。</p>
+            <span><i class="fa fa-tags"></i> Javascript, Ruby/jRuby, ROR</span>
+          </div>
+          <div data-sr class="project">
+            <h4><b>Phanium (POC)</b> <small>2013-01 ~ 2013-06</small></h4>
+            <p>基于Selenium和Phantomjs的一套Server/Agents架构的网页性能分析系统。用户可以向Phanium提交Selenium脚本，该系统会执行脚本并返回分析结果。</p>
+            <span><i class="fa fa-tags"></i> Javascript, Ruby, ROR, Selenium, PhantomJS, HTTP Archive</span>
+          </div>
+        </div> 
+      </section>
+
+      <section class="page open-source">
+        <div class="os-header">
+          <h1 data-sr="enter top"><i class="fa fa-code-fork"></i> 开源项目<small>(3)</small></h1>
+          <hr data-sr="enter top"/>
+          <p data-sr="enter top">业余时间，我也热爱折腾一点自己的小东西</p>
+        </div>
+
+        <div class="pure-g os-projects">
+          <div data-sr="enter top" class="pure-u-1-3">
+            <img src="img/missionboard.png" />
+            <h3><a href="https://chrome.google.com/webstore/detail/mission-board/akojjilfeffkjafemodkhciiebhldnkb" target="_blank">Mission Board</a></h3>
+            <p>一个基于进度的清单类Chrome App，适用于追踪管理剧集、动漫、图书等等项目。</p>
+          </div>
+          <div data-sr="enter top" class="pure-u-1-3">
+            <img src="img/checkpoint.png" />
+            <h3><a href="http://ye11ow.github.io/checkpoint.js/" target="_blank">Checkpoint.js</a></h3>
+            <p>Checkpoint.js是一套轻量级的Javascript库，主要功能为快速生成一个类似于Checkpoint的UI。</p>
+          </div>
+          <div data-sr="enter top" class="pure-u-1-3">
+            <img src="img/weibokong.png" />
+            <h3><a href="https://code.google.com/p/wei-bo-kong/" target="_blank">微博新控</a></h3>
+            <p>微博新控是Google Chrome浏览器的一款插件，最高峰时用户数达9000人，Chrome商店评分4.8/5.0。主要功能为自定义新浪微博界面. 可以根据需要去除页面上大部分元素, 内容过滤系统帮助屏蔽指定用户, 并增加桌面提醒功能。</p>
+          </div>
+        </div>
+      </section>
+
+
       <section id="links" class="page">
         <div class="findme">
           <h1>找到我</h1>
@@ -219,7 +218,6 @@
 
   <script src="js/jquery-2.1.1.min.js"></script>
   <script src="js/scrollReveal.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
   <script src="js/walkway.min.js"></script>
   <script src="js/ye11ow.js"></script>
 </body>

@@ -1,9 +1,26 @@
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+  font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+}
+
 body {
   overflow-x: hidden;
 }
 
+hr {
+  border: 1px solid #ddd;
+}
+
+small {
+  color: #aaa;
+}
+
 .container-fluid {
   padding: 0;
+}
+
+.clearfix {
+  clear: both;
 }
 
 /* sections */
@@ -19,7 +36,6 @@ body {
 
 .cover {
   top: 0%;
-  padding-top: 15%;
   background: #303e49;
   color: white;
   position: absolute;
@@ -53,11 +69,8 @@ body {
   font-size: 12px;
 }
 
-.languages button {
-  color: white!important;
-}
-
 .hero {
+  margin-top: 15%;
   margin-left: 20%;
 }
 
@@ -76,12 +89,12 @@ body {
 
 .intro h3 {
   font-weight: bold;
-  margin-top: 4px;
+  margin: 0.3em 0;
   text-align: right;
-  line-height: 42px;
 }
 
 .intro h5 {
+  margin: 1em 0;
   text-align: right;
 }
 
@@ -90,10 +103,18 @@ body {
   font-size: 1.2em;
 }
 
-.hero > blockquote {
+.intro-details {
+  border-left: 3px solid #ddd;
+  padding-left: 30px;
+  padding-top: 0.6em;
   float: left; 
   width: 600px; 
-  margin-left: 40px;
+  margin-left: 30px;
+}
+
+.intro-details > p {
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .scroll-down {
@@ -109,7 +130,7 @@ body {
 
 /* introduction */
 
-.evaluation > .row {
+.evaluation > .pure-g {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -173,6 +194,10 @@ body {
   text-align: center;
 }
 
+.projects h4 {
+  margin: 0.7em 0;
+}
+
 .work-bio {
   margin-left: 50px;
   margin-top: 20px;
@@ -186,7 +211,11 @@ body {
 
 .project {
   margin-left: 50px;
-  margin-top: 30px;
+  margin-top: 40px;
+}
+
+.project > p {
+  font-size: 85%;
 }
 
 
@@ -215,6 +244,10 @@ body {
   text-align: center;
 }
 
+.os-projects > div > p {
+  padding: 0 2em;
+}
+
 .os-projects img {
   margin-left: auto;
   margin-right: auto;
@@ -229,6 +262,10 @@ body {
 }
 
 /* findme page */
+
+h1 {
+  font-size: 1.5em;
+}
 
 .findme {
   width: 60%;

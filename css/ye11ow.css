@@ -9,9 +9,12 @@ body {
 /* sections */
 
 .page {
-  position: absolute;
-  min-height: 100%;
   min-width: 100%;
+}
+
+.main-content {
+  top: 100%;
+  position: absolute;
 }
 
 .cover {
@@ -19,29 +22,25 @@ body {
   padding-top: 15%;
   background: #303e49;
   color: white;
+  position: absolute;
 }
 
 .evaluation {
-  top: 100%;
-  height: 100%;
-  background-color: #96C962;
+  background-color: rgb(240, 241, 132);
   color: rgba(22,22,22,0.9);
 }
 
 .work {
-  top: 200%;
   background: url(../img/noisy.png);
 }
 
 .open-source {
-  top: 300%;
-  height: 100%;
   background-color: #3BAFDA;
   color: rgba(255,255,255,0.9);
 }
 
 #links {
-  top: 400%;
+  padding-top: 100px;
 }
 
 
@@ -89,6 +88,12 @@ body {
 .email {
   vertical-align: 0!important;
   font-size: 1.2em;
+}
+
+.hero > blockquote {
+  float: left; 
+  width: 600px; 
+  margin-left: 40px;
 }
 
 .scroll-down {
@@ -145,6 +150,20 @@ body {
   width: 300px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.skill > svg {
+  height: 20px;
+}
+
+.skill > svg > path:first-child {
+  stroke: #FEFFD5;
+  stroke-width: 20;
+}
+
+.skill > svg > path:nth-child(2) {
+  stroke: #31777A;
+  stroke-width: 20;
 }
 
 
@@ -212,9 +231,7 @@ body {
 /* findme page */
 
 .findme {
-  height: 40px;
   width: 60%;
-  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -225,7 +242,6 @@ body {
 
 .links {
   width: 400px;
-  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -257,6 +273,6 @@ body {
 
 .latest-update {
   position: absolute;
-  bottom: 15%;
+  bottom: 100px;
   right: 10%;
 }

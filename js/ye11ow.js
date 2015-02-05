@@ -1,5 +1,8 @@
 $(document).ready( function(){
 
+  $( "<style type=\"text/css\">.page { min-height: " + $(window).height() + "px }</style>")
+    .appendTo( "head" );
+
   window.sr = new scrollReveal({
     wait: "0.3s",
     move: "50px",

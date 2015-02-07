@@ -51,8 +51,8 @@ small {
 }
 
 .open-source {
-  background-color: #3BAFDA;
-  color: rgba(255,255,255,0.9);
+  background-color: #58b7ff;
+  color: white;
 }
 
 #links {
@@ -71,7 +71,9 @@ small {
 
 .hero {
   margin-top: 15%;
-  margin-left: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
 }
 
 .circular {
@@ -274,7 +276,6 @@ h1 {
   text-align: center;
   font-size: 48px;
   font-weight: bold;
-  opacity: 0;
 }
 
 .links {
@@ -302,7 +303,6 @@ h1 {
 }
 
 .links > svg text {
-  opacity: 0;
   font-size: 24px;
   text-anchor: middle;
   fill: #2780e3;
